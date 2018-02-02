@@ -1,0 +1,160 @@
+1) Start Zookeeper
+
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/zookeeper-server-start.sh /home/niralkk/Downloads/kafka_2.11-1.0.0/config/zookeeper.properties
+
+2) Start Kafka
+
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-server-start.sh /home/niralkk/Downloads/kafka_2.11-1.0.0/config/server.properties
+
+
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --list --zookeeper localhost:2181
+
+
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic login_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic add_hotel_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic get_all_hotel_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic update_hotel_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic search_hotel_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic delete_hotel_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic add_flight_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic get_all_flight_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic update_flight_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic search_flight_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic delete_flight_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic add_car_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic get_all_car_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic update_car_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic search_car_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic delete_car_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic get_all_user_data_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic search_user_data_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic update_user_data_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic delete_user_data_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic signup_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic login_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic signup_admin_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic updateUserInfo_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic getUserDetails_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic updateCardDetails_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic getCardDetails_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic create_folder_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic delete_folder_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic upload_file_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic delete_file_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic download_file_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic get_files_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic get_folders_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic star_file_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic unstar_file_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic star_folder_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic unstar_folder_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic get_activity_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic share_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic get_shared_files_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic delete_user_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic hotels_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic flights_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic cars_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic get_bookings_topic
+/home/niralkk/Downloads/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic response_topic
+
+
+D:\kafka\kafka_2.11-0.11.0.1\bin\windows\zookeeper-server-start.bat D:\kafka\kafka_2.11-0.11.0.1\config\zookeeper.properties
+
+D:\kafka\kafka_2.11-0.11.0.1\bin\windows\kafka-server-start.bat D:\kafka\kafka_2.11-0.11.0.1\config\server.properties
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic login
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic signup_topic
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic login_topic
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic response_topic
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic list_topic
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic register_topic
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic directory1_topic
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic directory_topic
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic signup_topic
+
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic list_topic
+
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic hotels_topic
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic flights_topic
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic cars_topic
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic get_bookings_topic
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic get_revenue_topic
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic delete_user_topic
+
+delete.topic.enable=true
+
+kafka-topics.sh --list --zookeeper localhost:2181
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic test
+kafka-console-producer.bat --broker-list localhost:9092 --topic login_topic
+kafka-console-producer.bat --broker-list localhost:9092 --topic response_topic
+
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic login --from-beginning
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic login --from-beginning
+
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic response --from-beginning
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic login_topic --from-beginning
+
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic topic_login --from-beginning
+
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic login_topic --from-beginning
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic response_topic --from-beginning
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic list_topic --from-beginning
+
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 3 --partitions 1 --topic my-replicated-topic
+
+
+kafka-topics.bat --describe --zookeeper localhost:2181 --topic my-replicated-topic
+
+kafka-topics.bat --zookeeper localhost:2181 --delete --topic DummyTopic
+
+kafka-topics.bat --zookeeper localhost:2181 --delete --topic test
+kafka-topics.bat --zookeeper localhost:2181 --delete --topic topic_login
+
+kafka-topics.bat --zookeeper localhost:2181 --delete --topic login_topic
+kafka-topics.bat --zookeeper localhost:2181 --delete --topic response_topic
+kafka-topics.bat --zookeeper localhost:2181 --delete --topic list_topic
+
+
+
+
+zookeeper-server-start.bat ..\..\config\zookeeper.properties
+kafka-server-start.bat ..\..\config\server.properties
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic login_topic
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic response_topic
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic list_topic
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic register_topic
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic directory1_topic
+
+
+
+searchHotelAdmin
+searchFlightAdmin
+searchCarAdmin
+
+deleteHotelAdmin
+deleteFlightAdmin
+deleteCarAdmin
+
+getAllUserDataAdmin
+searchUserDataAdmin---email
+updateUserDataAdmin---entire
+deleteUserDataAdmin---email

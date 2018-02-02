@@ -1,0 +1,11 @@
+>>>On Ubuntu
+
+sudo apt-get install redis-server
+
+>>>On Mac using brew
+
+brew install redis
+
+After installation::
+
+redis-server

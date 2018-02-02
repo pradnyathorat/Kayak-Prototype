@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125 24" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<style>.h7PI{fill:#fff;}.y3iP{fill:#ff690f;}</style>
+</defs>
+<g id="p-l-k">
+<path class="y3iP" d="M0 .03h23.94v23.94H0z">
+</path>
+<path class="h7PI" d="M7.38 6.02h2.91v11.97H7.38z">
+</path>
+<path class="h7PI" d="M16.56 17.98h-3.21L10.04 12l3.31-5.98h3.21L13.23 12l3.33 5.98z">
+</path>
+</g>
+<g id="p-l-a">
+<path class="y3iP" d="M25.27.03h23.94v23.94H25.27z">
+</path>
+<path class="h7PI" d="M35.07 16.26L34.55 18h-3.1l3.94-12h3.7L43 18h-3.17l-.52-1.72zm2.12-6.82l-1.4 4.47h2.8z">
+</path>
+</g>
+<path class="y3iP" d="M50.53.03h23.94v23.94H50.53z">
+</path>
+<path class="h7PI" d="M64 18h-2.93v-5.29L57.14 6h3.46l1.94 3.68L64.45 6h3.41L64 12.71z">
+</path>
+<use xlink:href="#p-l-a" x="50.53">
+</use>
+<use xlink:href="#p-l-k" x="101.06">
+</use>
+</svg>
